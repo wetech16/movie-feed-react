@@ -28,9 +28,7 @@ function App() {
   const handleInput = (e) => {
     let s = e.target.value;
 
-    setState((prevState) => {
-      return { ...prevState, s: s };
-    });
+    setState({ ...state, s: s });
   };
 
   const openPopup = (id) => {
