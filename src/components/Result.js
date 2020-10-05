@@ -1,4 +1,5 @@
 import React from "react";
+import { useApp } from "../hooks/useApp";
 
 function Result({ result, openPopup }) {
   return (
