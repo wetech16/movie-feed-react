@@ -1,13 +1,11 @@
 import React from "react";
-import { useApp } from "../hooks/useApp";
 
 import Result from "./Result";
 
-function Results() {
-  const { state, openPopup } = useApp();
+function Results({ results, openPopup }) {
   return (
     <section className="results">
-      {state.results.map((result) => (
+      {results.map((result) => (
         <Result
           key={result.imdbID}
           result={result}
